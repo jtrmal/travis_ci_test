@@ -10,7 +10,7 @@ compiler:
 addons:
   apt:
     sources:
-      - llvm-toolchain-trusty
+      - llvm-toolchain-trusty-3.9
     packages:
       - clang
 
