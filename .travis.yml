@@ -1,0 +1,23 @@
+# Enable C++ support
+language: cpp
+sudo: required
+dist: trusty
+
+# Compiler selection
+compiler:
+  - clang
+
+addons:
+  apt:
+    sources:
+    - llvm-toolchain-precise-3.6
+    packages:
+    - clang-3.6
+
+# Build steps
+script:
+  - mkdir build
+  - cd build
+	- clang --version
+
+
