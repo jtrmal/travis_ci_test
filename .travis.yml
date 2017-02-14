@@ -5,19 +5,20 @@ dist: trusty
 
 # Compiler selection
 compiler:
-  - clang
+  - clang-3.9
 
 addons:
   apt:
     sources:
       - llvm-toolchain-trusty-3.9
     packages:
-      - clang
+      - clang-3.9
 
 # Build steps
 script:
   - mkdir build
   - cd build
   - clang --version
+  - clang-3.9 --version
 
 
