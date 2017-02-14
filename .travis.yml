@@ -10,14 +10,14 @@ compiler:
 addons:
   apt:
     sources:
-    - llvm-toolchain-precise-3.6
+      - llvm-toolchain-precise-3.6
     packages:
-    - clang-3.6
+      - clang-3.6
 
 # Build steps
 script:
   - mkdir build
   - cd build
-	- clang --version
+  - clang --version
 
 
